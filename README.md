@@ -22,11 +22,12 @@ Observed revenue alone can overstate impact because high-intent customers may ha
 
 | Case study | Design | Business question | Main output |
 |---|---|---|---|
+| [`incrementality-testing-case-study.ipynb`](incrementality-testing-case-study.ipynb) | Full randomized holdout notebook | Should the campaign scale, and which segments should be prioritized? | Causal lift, confidence interval, incremental revenue, iROAS, segment effects |
 | [`randomized_holdout.py`](case_studies/randomized_holdout.py) | Customer-level randomized controlled trial | Did the campaign create additional conversions and revenue? | Absolute/relative lift, confidence interval, p-value, incremental revenue |
 | [`geo_incrementality.py`](case_studies/geo_incrementality.py) | Treated market with matched control | Did regional media increase sales beyond the expected counterfactual? | Weekly counterfactual, total lift, relative lift |
 | [`segment_incrementality.py`](case_studies/segment_incrementality.py) | Randomized test with heterogeneous effects | Which customer segments respond incrementally? | Segment lift and targeting priorities |
 
-All examples generate synthetic data with fixed random seeds. They are safe to run, reproducible, and easy to replace with real experiment data.
+The notebook provides the complete narrative walkthrough with executable Python cells and charts. All examples generate synthetic data with fixed random seeds. They are safe to run, reproducible, and easy to replace with real experiment data.
 
 ## Quick start
 
